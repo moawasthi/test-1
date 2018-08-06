@@ -2,11 +2,18 @@
 <html>
 <head>
     <title>Basic Embed</title>
-    <iframe src="https://us.qlikcloud.com/view/5b6813cabc1916815b1e116a" />
+    
 </head>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $.getJSON('http://anyorigin.com/go?url=https%3A//us.qlikcloud.com/view/5b6813cabc1916815b1e116a&callback=?', function(data){
+	$('#output').html(data.contents);
+});
+</script>
 <body>
-    <div id="vizContainer" style="width:800px; height:700px;"></div>    
+    <div id="output" style="width:800px; height:700px;">
+        <iframe src="http://browns.softpyramid.ca/widgets/fee-calculator"></iframe>
+    </div>    
 </body>
 
 </html>
