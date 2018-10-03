@@ -1,0 +1,10 @@
+{"tables":[
+	{
+		"name":"Customer/Material",
+		"sapTableName":"a005"
+	},
+	{
+		"name":"Division/Customer",
+		"sapTableName":"a007"
+	}
+]}
